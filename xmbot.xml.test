@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<client>
+	<host>127.0.0.1</host>
+	<port>5222</port>
+	<hostname>localhost</hostname>
+	<user>Tommy</user>
+	<password>le38aO</password>
+	<muc>
+		<room>test</room>
+		<domain>conference.localhost</domain>
+		<nick>Tommy</nick>
+		<password></password>
+	</muc>
+</client>
+<modules>
+	<load file="./sulci.so">
+		<option name="super" value="true"/>
+	</load>
+	<load file="./misc.so">
+	</load>
+	<load file="./access.so">
+		<option name="acl" value="etc/access"/>
+		<option name="owner" value="art@localhost"/>
+	</load>
+</modules>
+<common>
+	<encoding>UTF-8</encoding>
+	<logfile type="msg" prefix="[%hour:%minute:%second] <%nick> " jid="linux-talks@conference.jabber.ru">../public/log/jabber.ru/linux-talks/%year.%month.%day.log</logfile>
+</common>

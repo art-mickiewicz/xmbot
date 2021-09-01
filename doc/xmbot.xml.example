@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<client>
+	<host>jabber.ru</host>
+	<port>5222</port>
+	<hostname>jabber.ru</hostname>
+	<user>megabot</user>
+	<password>1rerOla</password>
+	<muc>
+		<room>linux-talks</room>
+		<domain>conference.jabber.ru</domain>
+		<nick>gigabot</nick>
+		<password>SFu6eee</password>
+	</muc>
+</client>
+<modules>
+	<load file="/usr/share/xmbot/modules/tcl.so">
+		<option name="use" value="smartbot.tcl"/>
+	</load>
+</modules>
+<common>
+	<encoding>KOI8-R</encoding>
+</common>
